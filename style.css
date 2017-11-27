@@ -3,31 +3,38 @@
   justify-content: center;
 }
 
+.menu-bars {
+  position: fixed;
+  right: 25px;
+  top: 25px;
+}
+
 .content-area {
-  margin-top: 100px;
-  width: 500px;
+  margin: 120px 0 120px 0;
+  width: 70%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.content-area img {
+.photo-name-title {
+  width: 100%;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.photo-name-title img {
   height: 100px;
   width: 100px;
   border-radius: 50px;
 }
 
-.photo-name-title {
-  width: 500px;
-  height: 160px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .name-title {
+  height: 55px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -39,6 +46,7 @@
   align-items: center;
   font-family: 'Dosis', sans-serif;
   font-size: 24px;
+  color: #373737;
 }
 
 .title {
@@ -54,6 +62,11 @@
 .intro-statement {
   font-family: 'Open Sans', sans-serif;
   font-size: 14px;
+  color: #373737;
+}
+
+.intro-statement p {
+  margin: 22px 0 22px 0;
 }
 
 .intro-statement a {
@@ -64,4 +77,91 @@
 .intro-statement a:hover {
   text-decoration: underline;
   color: #D436AF;
+}
+
+.nav-link-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+}
+
+.nav-link {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #373737;
+  margin: 2px 0 2px 0;
+}
+
+.nav-link i {
+  margin: 4px;
+}
+
+.nav-link img {
+  height: 14px;
+  width: 14px;
+  margin: 4px;
+}
+
+.nav-link a {
+  text-decoration: none;
+  color: #373737;
+}
+
+.nav-link a:hover {
+  color: #FF00C8;
+}
+
+@media (min-width: 721px) {
+  .menu-bars {
+    right: 80px;
+    top: 80px;
+  }
+
+  .content-area {
+    margin: 50px 0 50px 0;
+  }
+
+  .photo-name-title {
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 2px solid #E8EBEE;
+  }
+
+  .photo-name-title img {
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+  }
+
+  .name-title {
+    margin-left: 50px;
+    height: 80px;
+    align-items: flex-start;
+  }
+
+  .name {
+    font-size: 36px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .intro-statement {
+    font-size: 18px;
+  }
+
+  .nav-link-container {
+    font-size: 18px;
+  }
+
+  .nav-link img {
+    height: 16px;
+    width: 16px;
+  }
 }
