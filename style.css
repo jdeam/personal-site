@@ -116,7 +116,7 @@
   color: #FF00C8;
 }
 
-@media (min-width: 721px) {
+@media (min-width: 601px) {
   .menu-bars {
     right: 80px;
     top: 80px;
