@@ -9,6 +9,10 @@
   top: 25px;
 }
 
+.menu-bars a {
+  color: #373737;
+}
+
 .content-area {
   margin: 100px 0 100px 0;
   width: 70%;
@@ -71,12 +75,12 @@
 
 .intro-statement a {
   text-decoration: none;
-  color: #FF00C8;
+  color: #FF7F50;
 }
 
 .intro-statement a:hover {
   text-decoration: underline;
-  color: #D436AF;
+  color: #FF6347;
 }
 
 .nav-link-container {
@@ -113,7 +117,16 @@
 }
 
 .nav-link a:hover {
-  color: #FF00C8;
+  color: #FF7F50;
+}
+
+.mp {
+  display: flex;
+  align-items: center;
+}
+
+.mp:hover > :first-child {
+  content: url('images/mp_logo_coral.png');
 }
 
 @media (min-width: 721px) {
@@ -169,7 +182,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    margin: 2px 0 2px 0;
   }
 
   .nav-link img {
