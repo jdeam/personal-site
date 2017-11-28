@@ -116,14 +116,14 @@
   color: #FF00C8;
 }
 
-@media (min-width: 601px) {
+@media (min-width: 721px) {
   .menu-bars {
     right: 80px;
     top: 80px;
   }
 
   .content-area {
-    width: 550px;
+    width: 600px;
     margin: 50px 0 50px 0;
   }
 
